@@ -1,0 +1,28 @@
+2025-11-05 07:35:33,396 - src.data_preprocessing - INFO -Data Preprocessing initialized. Input file: artifacts/raw/animelist.csv, Output dir: artifacts/processed
+2025-11-05 07:35:33,396 - src.data_preprocessing - INFO -Starting Data Preprocessing...
+2025-11-05 07:35:34,273 - src.data_preprocessing - INFO -Data loaded successfully from artifacts/raw/animelist.csv. Shape: (5000000, 3)
+2025-11-05 07:35:34,405 - src.data_preprocessing - INFO -Filtered users with at least 400 ratings. New shape: (3246641, 3)
+2025-11-05 07:35:35,020 - src.data_preprocessing - INFO -Scaled ratings to range [0, 1].
+2025-11-05 07:35:35,112 - src.data_preprocessing - INFO -Encoded user and anime IDs.
+2025-11-05 07:35:35,514 - src.data_preprocessing - INFO -Split data into train and test sets. Train size: 3245641, Test size: 1000
+2025-11-05 07:35:35,521 - src.data_preprocessing - INFO -Saved artifact: user2user_encoded to artifacts/processed
+2025-11-05 07:35:35,521 - src.data_preprocessing - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-05 07:35:35,527 - src.data_preprocessing - INFO -Saved artifact: user_encoded2user to artifacts/processed
+2025-11-05 07:35:35,527 - src.data_preprocessing - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-05 07:35:35,550 - src.data_preprocessing - INFO -Saved artifact: anime2anime_encoded to artifacts/processed
+2025-11-05 07:35:35,550 - src.data_preprocessing - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-05 07:35:35,573 - src.data_preprocessing - INFO -Saved artifact: anime_encoded2anime to artifacts/processed
+2025-11-05 07:35:35,573 - src.data_preprocessing - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-05 07:35:38,014 - src.data_preprocessing - INFO -Saved processed data arrays and rating dataframe to artifacts/processed
+2025-11-05 07:35:41,089 - src.data_preprocessing - INFO -Anime and Synopsis data processed and saved successfully.In paths: artifacts/processed\anime_df.csv and artifacts/processed\synopsis_df.csv
+2025-11-05 07:35:41,091 - src.data_preprocessing - INFO -Data Preprocessing pipeline completed successfully.
+2025-11-05 07:35:48,485 - src.model_training - INFO -ModelTraining instance & CometML Initialized successfully.
+2025-11-05 07:35:48,538 - src.model_training - INFO -Data Loaded Sucessfully for Model Training
+2025-11-05 07:35:48,572 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-05 07:35:48,572 - src.base_model - INFO -Configuration file loaded successfully.
+2025-11-05 07:35:49,923 - src.base_model - INFO -Model created and compiled successfully.
+2025-11-05 07:36:12,782 - src.model_training - INFO -Model Training Completed........
+2025-11-05 07:36:13,022 - src.model_training - INFO -Model Saved to artifacts/model\model.h5
+2025-11-05 07:36:13,028 - src.model_training - INFO -Extracting weights for anime_embedding
+2025-11-05 07:36:13,030 - src.model_training - INFO -Extracting weights for user_embedding
+2025-11-05 07:36:13,076 - src.model_training - INFO -User and Anime weights saved successfully...

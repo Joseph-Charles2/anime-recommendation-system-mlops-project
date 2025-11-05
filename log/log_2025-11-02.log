@@ -1,0 +1,58 @@
+2025-11-02 09:55:06,974 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-02 09:55:07,032 - __main__ - INFO -Data Ingestion initialized . Destination :artifacts/raw
+2025-11-02 09:55:07,032 - __main__ - INFO -Starting Data Ingestion Process....
+2025-11-02 09:55:07,032 - __main__ - INFO -Files to process: ['anime.csv', 'anime_with_synopsis.csv', 'animelist.csv']
+2025-11-02 09:55:07,032 - __main__ - DEBUG -Processing file: anime.csv
+2025-11-02 09:55:07,625 - __main__ - INFO -Blob metadata reloaded for anime.csv. Size: 5662362 bytes.
+2025-11-02 09:55:07,625 - __main__ - INFO -File 'anime.csv' detected with size: 5.40 MB
+2025-11-02 09:55:07,626 - __main__ - INFO -Downloading small file:anime.csv.....
+2025-11-02 09:55:10,364 - __main__ - INFO -Successfully Downloaded anime.csv to artifacts/raw\anime.csv.
+2025-11-02 09:55:10,364 - __main__ - DEBUG -Processing file: anime_with_synopsis.csv
+2025-11-02 09:55:10,635 - __main__ - INFO -Blob metadata reloaded for anime_with_synopsis.csv. Size: 7221844 bytes.
+2025-11-02 09:55:10,635 - __main__ - INFO -File 'anime_with_synopsis.csv' detected with size: 6.89 MB
+2025-11-02 09:55:10,635 - __main__ - INFO -Downloading small file:anime_with_synopsis.csv.....
+2025-11-02 09:55:13,200 - __main__ - INFO -Successfully Downloaded anime_with_synopsis.csv to artifacts/raw\anime_with_synopsis.csv.
+2025-11-02 09:55:13,200 - __main__ - DEBUG -Processing file: animelist.csv
+2025-11-02 09:55:13,467 - __main__ - INFO -Blob metadata reloaded for animelist.csv. Size: 2031058307 bytes.
+2025-11-02 09:55:13,468 - __main__ - INFO -File 'animelist.csv' detected with size: 1936.97 MB
+2025-11-02 09:55:13,468 - __main__ - INFO -Starting Chunked download for animelist.csv..........
+2025-11-02 09:55:13,469 - __main__ - INFO -Starting chunked streaming for large file :animelist.csv........
+2025-11-02 09:55:48,176 - __main__ - INFO -Processed chunk 1 with 5000000 rows form animelist.csv.
+2025-11-02 09:55:50,506 - __main__ - INFO -Chunk 1 written to local file animelist.csv.
+2025-11-02 09:56:19,142 - __main__ - INFO -Reached maximum row limit of 5000000. Stopping stream for animelist.csv.
+2025-11-02 09:56:19,144 - __main__ - INFO -Finished Streaming and processing all chunks (Total Rows Processed: 5000000) for animelist.csv.
+2025-11-02 09:56:19,152 - __main__ - INFO -Successfully Downloaded all chunks and saved to animelist.csv.
+2025-11-02 09:56:19,160 - __main__ - INFO -Data Ingestion Process Done.
+2025-11-02 09:57:00,231 - __main__ - INFO -Data Preprocessing initialized. Input file: artifacts/raw/animelist.csv, Output dir: artifacts/processed
+2025-11-02 09:57:00,232 - __main__ - INFO -Starting Data Preprocessing...
+2025-11-02 09:57:00,738 - __main__ - INFO -Data loaded successfully from artifacts/raw/animelist.csv. Shape: (5000000, 3)
+2025-11-02 09:57:00,923 - __main__ - INFO -Filtered users with at least 400 ratings. New shape: (3246641, 3)
+2025-11-02 09:57:01,504 - __main__ - INFO -Scaled ratings to range [0, 1].
+2025-11-02 09:57:01,590 - __main__ - INFO -Encoded user and anime IDs.
+2025-11-02 09:57:01,882 - __main__ - INFO -Split data into train and test sets. Train size: 3245641, Test size: 1000
+2025-11-02 09:57:01,888 - __main__ - INFO -Saved artifact: user2user_encoded to artifacts/processed
+2025-11-02 09:57:01,888 - __main__ - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-02 09:57:01,940 - __main__ - INFO -Saved artifact: user_encoded2user to artifacts/processed
+2025-11-02 09:57:01,940 - __main__ - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-02 09:57:01,964 - __main__ - INFO -Saved artifact: anime2anime_encoded to artifacts/processed
+2025-11-02 09:57:01,965 - __main__ - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-02 09:57:01,988 - __main__ - INFO -Saved artifact: anime_encoded2anime to artifacts/processed
+2025-11-02 09:57:01,988 - __main__ - INFO -Data Preprocessing artifacts saved successfully.
+2025-11-02 09:57:04,260 - __main__ - INFO -Saved processed data arrays and rating dataframe to artifacts/processed
+2025-11-02 09:57:06,803 - __main__ - INFO -Anime and Synopsis data processed and saved successfully.In paths: artifacts/processed\anime_df.csv and artifacts/processed\synopsis_df.csv
+2025-11-02 09:57:06,804 - __main__ - INFO -Data Preprocessing pipeline completed successfully.
+2025-11-02 09:58:22,473 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-02 10:07:01,103 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-02 10:17:41,177 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-02 10:21:26,928 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-02 10:27:07,647 - __main__ - INFO -Start the Model Training.
+2025-11-02 10:27:07,647 - __main__ - INFO -ModelTraining instance created successfully.
+2025-11-02 10:27:07,674 - __main__ - INFO -Data Loaded Sucessfully for Model Training
+2025-11-02 10:27:07,690 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-02 10:27:07,690 - src.base_model - INFO -Configuration file loaded successfully.
+2025-11-02 10:27:07,732 - src.base_model - INFO -Model created and compiled successfully.
+2025-11-02 10:27:30,531 - __main__ - INFO -Model Training Completed........
+2025-11-02 10:27:30,685 - __main__ - INFO -Model Saved to artifacts/model\model.h5
+2025-11-02 10:27:30,691 - __main__ - INFO -Extracting weights for anime_embedding
+2025-11-02 10:27:30,693 - __main__ - INFO -Extracting weights for user_embedding
+2025-11-02 10:27:30,699 - __main__ - INFO -User and Anime weights saved successfully...

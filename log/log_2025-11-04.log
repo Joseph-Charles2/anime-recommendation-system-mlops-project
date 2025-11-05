@@ -1,0 +1,23 @@
+2025-11-04 11:24:17,490 - __main__ - INFO -Start the Model Training.
+2025-11-04 11:24:24,887 - __main__ - INFO -ModelTraining instance & CometML Initialized successfully.
+2025-11-04 11:24:26,184 - __main__ - INFO -Data Loaded Sucessfully for Model Training
+2025-11-04 11:24:26,260 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-04 11:24:26,261 - src.base_model - INFO -Configuration file loaded successfully.
+2025-11-04 11:24:27,515 - src.base_model - INFO -Model created and compiled successfully.
+2025-11-04 11:24:54,637 - __main__ - INFO -Model Training Completed........
+2025-11-04 11:24:54,892 - __main__ - INFO -Model Saved to artifacts/model\model.h5
+2025-11-04 11:24:54,899 - __main__ - INFO -Extracting weights for anime_embedding
+2025-11-04 11:24:54,902 - __main__ - INFO -Extracting weights for user_embedding
+2025-11-04 11:24:54,938 - __main__ - ERROR -Error in saved the model weights,'Experiment' object has no attribute 'log_aseet'
+2025-11-04 11:24:54,939 - __main__ - ERROR -Failed in Model Training,('Error in save the model anime and user weights', AttributeError("'Experiment' object has no attribute 'log_aseet'"))
+2025-11-04 11:34:45,523 - __main__ - INFO -Start the Model Training.
+2025-11-04 11:34:52,475 - __main__ - INFO -ModelTraining instance & CometML Initialized successfully.
+2025-11-04 11:34:52,517 - __main__ - INFO -Data Loaded Sucessfully for Model Training
+2025-11-04 11:34:52,533 - utils.common_function - INFO -Successfully read the yaml file.
+2025-11-04 11:34:52,533 - src.base_model - INFO -Configuration file loaded successfully.
+2025-11-04 11:34:52,579 - src.base_model - INFO -Model created and compiled successfully.
+2025-11-04 11:35:13,306 - __main__ - INFO -Model Training Completed........
+2025-11-04 11:35:13,490 - __main__ - INFO -Model Saved to artifacts/model\model.h5
+2025-11-04 11:35:13,496 - __main__ - INFO -Extracting weights for anime_embedding
+2025-11-04 11:35:13,498 - __main__ - INFO -Extracting weights for user_embedding
+2025-11-04 11:35:13,539 - __main__ - INFO -User and Anime weights saved successfully...

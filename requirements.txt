@@ -1,0 +1,12 @@
+pandas
+numpy
+google-cloud-storage
+pyyaml
+tensorflow
+joblib
+scikit-learn
+comet_ml
+dvc
+dvc-gs
+
+-e .
