@@ -5,3 +5,10 @@ artifacts/model/
 artifacts/model_checkpoint/
 artifacts/weights/
 ml_project_2.egg-info/
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.pyc
+*.pyd
+*.so
+*.egg
