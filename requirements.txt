@@ -8,5 +8,6 @@ scikit-learn
 comet_ml
 dvc
 dvc-gs
+Flask
 
 -e .
